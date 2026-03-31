@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ### DigiTools Platform
 
 Name of Project:
@@ -16,7 +15,7 @@ Technology That I Used:
 - Vite
 - React Toastify
 - JSON Data
-- 
+
 
 3 Features About My Project:
 - Product cart count updates instantly in the navbar
@@ -28,5 +27,4 @@ GitHub Repository:
 
 
 Live Project Link:
-=======
->>>>>>> 445d01a (added to some small changes)
+
