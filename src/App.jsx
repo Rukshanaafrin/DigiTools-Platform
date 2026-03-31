@@ -25,6 +25,8 @@ import Banner from "./component/Banner";
 import Stats from "./component/Stats";
 import Products from "./component/Products";
 import Steps from "./component/Steps";
+import Pricing from "./component/Pricing";
+import Footer from "./component/Footer";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -35,6 +37,7 @@ function App() {
       {!showCartPage && <NavBar cartCount={cart.length} />}
       {!showCartPage && <Banner />}
       {!showCartPage && <Stats />}
+     
 
       <Products
         cart={cart}
@@ -42,7 +45,11 @@ function App() {
         showCartPage={showCartPage}
         setShowCartPage={setShowCartPage}
       />
-      <Steps/>
+     {!showCartPage && <Steps/>}
+     {!showCartPage && <Pricing/>}
+     {!showCartPage && <Footer/>}
+    
+      
     </>
   );
 }

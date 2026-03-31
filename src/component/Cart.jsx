@@ -1,3 +1,4 @@
+import emptyCartImg from "../assets/products/shopping-cart.png";
 const Cart = ({ cart, setCart, setShowCartPage }) => {
   const total = cart.reduce((sum, item) => sum + item.price, 0);
 
@@ -15,25 +16,38 @@ const Cart = ({ cart, setCart, setShowCartPage }) => {
       <h2 className="text-2xl font-bold mb-6">Your Cart</h2>
 
       {cart.length === 0 ? (
-        <p className="text-center text-gray-400 py-10">
-          Your cart is empty
-        </p>
+        <div className="text-center py-20">
+          <img
+            src={emptyCartImg}
+            alt="empty cart"
+            className="w-16 h-16 mx-auto mb-4 opacity-40"
+          />
+          <p className="text-gray-400 text-lg">Your cart is empty</p>
+        </div>
       ) : (
         <>
           <div className="space-y-6">
             {cart.map((item) => (
               <div
                 key={item.id}
-                className="flex justify-between items-center border-b pb-4"
+                className="flex justify-between items-center bg-gray-50 rounded-2xl px-6 py-4 mb-4"
               >
-                <div>
-                  <h3 className="font-semibold">{item.name}</h3>
-                  <p className="text-gray-400">${item.price}</p>
+                <div className="flex items-center gap-4">
+                  <img
+                    src={item.image}
+                    alt={item.name}
+                    className="w-10 h-10 object-contain"
+                  />
+
+                  <div>
+                    <h3 className="font-semibold text-lg">{item.name}</h3>
+                    <p className="text-gray-500">${item.price}</p>
+                  </div>
                 </div>
 
                 <button
                   onClick={() => handleRemove(item.id)}
-                  className="text-pink-400"
+                  className="text-pink-400 font-medium"
                 >
                   Remove
                 </button>

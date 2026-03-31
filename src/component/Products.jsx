@@ -22,7 +22,7 @@ const Products = ({
   };
 
   return (
-    <section className="py-20 max-w-7xl mx-auto">
+    <section className=" my-16 py-20 max-w-7xl mx-auto bg-slate-100 rounded-4xl px-6">
       {/* Header always visible */}
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold mb-4">
@@ -62,7 +62,7 @@ const Products = ({
 
       {/* Only this section changes */}
       {!showCartPage ? (
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 bg-white p-6 rounded-3xl">
           {productsData.map((product) => (
             <ProductCards
               key={product.id}

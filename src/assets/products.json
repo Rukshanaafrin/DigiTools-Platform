@@ -7,7 +7,7 @@
     "period": "Mo",
     "tag": "Best Seller",
     "tagType": "best",
-    "image": "writing_2327400 1.png",
+    "image": "/products/writing_2327400 1.png",
     "features": [
       "Unlimited AI generations",
       "50+ writing templates",
@@ -22,7 +22,7 @@
     "period": "One-Time",
     "tag": "Popular",
     "tagType": "popular",
-    "image": "design-tool.png",
+    "image": "/products/design-tool.png",
     "features": [
       "2000+ templates",
       "Monthly updates",
@@ -37,7 +37,7 @@
     "period": "Mo",
     "tag": "New",
     "tagType": "new",
-    "image": "portfolio.png",
+    "image": "/products/portfolio.png",
     "features": [
       "10M+ assets",
       "Commercial use",
@@ -52,7 +52,7 @@
     "period": "Mo",
     "tag": "Popular",
     "tagType": "popular",
-    "image": "operation.png",
+    "image": "/products/operation.png",
     "features": [
       "50+ automations",
       "API access",
@@ -67,7 +67,7 @@
     "period": "One-Time",
     "tag": "New",
     "tagType": "new",
-    "image": "package.png",
+    "image": "/products/package.png",
     "features": [
       "100+ templates",
       "ATS optimization",
@@ -82,7 +82,7 @@
     "period": "Mo",
     "tag": "Best Seller",
     "tagType": "best",
-    "image": "social-media.png",
+    "image": "/products/social-media.png",
     "features": [
       "5000+ assets",
       "Scheduler included",
