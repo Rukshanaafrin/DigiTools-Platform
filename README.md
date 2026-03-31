@@ -25,5 +25,5 @@ Technology That I Used :
 GitHub Repository: https://github.com/Rukshanaafrin/DigiTools-Platform
 
 
-Live Project Link: https://rukshanaafrin.github.io/DigiTools-Platform/
+Live Project Link: https://digitools-platform-afrin.netlify.app/
 
