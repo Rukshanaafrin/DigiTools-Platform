@@ -17,8 +17,9 @@ function App() {
 
   return (
     <>
-      {!showCartPage && <NavBar cartCount={cart.length} />}
-      {!showCartPage && <Banner />}
+      <NavBar cartCount={cart.length} />
+      <div className="pt-20">
+        {!showCartPage && <Banner />}
       {!showCartPage && <Stats />}
 
       <Products
@@ -32,6 +33,8 @@ function App() {
       {!showCartPage && <Pricing />}
       {!showCartPage && <Challenge />}
       {!showCartPage && <Footer />}
+      </div>
+      
 
       <ToastContainer
         position="top-right"

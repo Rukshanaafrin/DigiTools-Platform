@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### DigiTools Platform
 
 Name of Project:
@@ -27,3 +28,5 @@ GitHub Repository:
 
 
 Live Project Link:
+=======
+>>>>>>> 445d01a (added to some small changes)
