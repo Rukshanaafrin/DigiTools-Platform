@@ -40,7 +40,7 @@ const Products = ({
             onClick={() => setShowCartPage(false)}
             className={`px-8 py-3 rounded-full ${
               !showCartPage
-                ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-white"
+                ? "bg-gradient-to-r from-blue-400 to-blue-500 text-white"
                 : "bg-gray-100"
             }`}
           >
