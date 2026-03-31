@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### DigiTools Platform
 
 Name of Project :
@@ -23,7 +24,7 @@ Technology That I Used :
 - Proceed to checkout clears all cart items and shows toast alerts
   
 
-GitHub Repository: https://github.com/Rukshanaafrin/DigiTools-Platform
+GitHub Repository:
 
 
 Live Project Link: https://rukshanaafrin.github.io/DigiTools-Platform/
