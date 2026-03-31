@@ -1,31 +1,14 @@
-
-// import NavBar from "./component/NavBar"
-// import Banner from "./component/Banner"
-// import Stats from "./component/Stats"
-// import Products from "./component/Products"
-
-// function App() {
-
-//   return (
-//     <>
-//     <NavBar/>
-//     <Banner/>
-//     <Stats/>
-//     <Products/>
-//     </>
-//   )
-// }
-
-// export default App
-
-
 import { useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import NavBar from "./component/NavBar";
 import Banner from "./component/Banner";
 import Stats from "./component/Stats";
 import Products from "./component/Products";
 import Steps from "./component/Steps";
 import Pricing from "./component/Pricing";
+import Challenge from "./component/Challenge";
 import Footer from "./component/Footer";
 
 function App() {
@@ -37,7 +20,6 @@ function App() {
       {!showCartPage && <NavBar cartCount={cart.length} />}
       {!showCartPage && <Banner />}
       {!showCartPage && <Stats />}
-     
 
       <Products
         cart={cart}
@@ -45,11 +27,17 @@ function App() {
         showCartPage={showCartPage}
         setShowCartPage={setShowCartPage}
       />
-     {!showCartPage && <Steps/>}
-     {!showCartPage && <Pricing/>}
-     {!showCartPage && <Footer/>}
-    
-      
+
+      {!showCartPage && <Steps />}
+      {!showCartPage && <Pricing />}
+      {!showCartPage && <Challenge />}
+      {!showCartPage && <Footer />}
+
+      <ToastContainer
+        position="top-right"
+        autoClose={2000}
+        theme="colored"
+      />
     </>
   );
 }

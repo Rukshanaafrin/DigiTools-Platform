@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 import productsData from "../assets/products.json";
 import ProductCards from "./ProductCards";
 import Cart from "./Cart";
@@ -16,23 +17,26 @@ const Products = ({
 
     if (!exists) {
       setCart([...cart, product]);
+      toast.success(`${product.name} added to cart`);
+    } else {
+      toast.warning("Already added to cart");
     }
 
     setActiveId(product.id);
   };
 
   return (
-    <section className=" my-16 py-20 max-w-7xl mx-auto bg-slate-100 rounded-4xl px-6">
-      {/* Header always visible */}
+    <section className="my-16 py-20 max-w-7xl mx-auto bg-slate-100 rounded-4xl px-6">
       <div className="text-center mb-12">
         <h2 className="text-5xl font-bold mb-4">
           Premium Digital Tools
         </h2>
 
         <p className="text-gray-400">
-         Choose from our curated collection of premium digital products designed
-         <br />
-         to boost your productivity and creativity.
+          Choose from our curated collection of premium digital products
+          designed
+          <br />
+          to boost your productivity and creativity.
         </p>
 
         <div className="flex justify-center gap-4 mt-8">
@@ -60,7 +64,6 @@ const Products = ({
         </div>
       </div>
 
-      {/* Only this section changes */}
       {!showCartPage ? (
         <div className="grid md:grid-cols-3 gap-8 bg-white p-6 rounded-3xl">
           {productsData.map((product) => (

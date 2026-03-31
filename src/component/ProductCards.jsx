@@ -59,7 +59,7 @@ const ProductCards = ({
             : "bg-gradient-to-r from-cyan-400 to-blue-500"
         }`}
       >
-        {isAdded ? "✔ Added to Cart" : "Buy Now"}
+        {isAdded ? "✔ Added to Cart!" : "Buy Now"}
       </button>
     </div>
   );
